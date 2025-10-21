@@ -18,7 +18,9 @@ kubectl apply -f ingress.yaml
 kubectl apply -f hpa.yaml
 
 3. Verificar recursos
+
 kubectl top pods
+
 |NAME|CPU(cores)|MEMORY(bytes)|
 |----------|--------|----------|
 |backend-747789956d-66hh4|6m|7Mi|
