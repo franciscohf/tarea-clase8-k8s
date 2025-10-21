@@ -19,20 +19,21 @@ kubectl apply -f hpa.yaml
 
 3. Verificar recursos
 kubectl top pods
-NAME                                 CPU(cores)   MEMORY(bytes)
-backend-747789956d-66hh4             6m           7Mi
-backend-747789956d-ftj9t             6m           7Mi
-backend-747789956d-pscnb             6m           7Mi
-backend-747789956d-pzb8b             5m           7Mi
-backend-747789956d-qbcw6             5m           7Mi
-frontend-55b84b596d-5lhgr            1m           10Mi
-frontend-55b84b596d-dhqpt            1m           10Mi
-load-generator                       175m         1Mi
-webapp-deployment-56df784bd8-72rtn   0m           7Mi
-webapp-deployment-56df784bd8-78wtk   0m           8Mi
-webapp-deployment-56df784bd8-9kt4l   0m           8Mi
-webapp-deployment-56df784bd8-kp2c2   0m           7Mi
-webapp-deployment-56df784bd8-ms8qv   0m           7Mi
+|NAME|CPU(cores)|MEMORY(bytes)|
+|----------|--------|----------|
+|backend-747789956d-66hh4|6m|7Mi|
+|backend-747789956d-ftj9t|6m|7Mi|
+|backend-747789956d-pscnb|6m|7Mi|
+|backend-747789956d-pzb8b|5m|7Mi|
+|backend-747789956d-qbcw6|5m|7Mi|
+|frontend-55b84b596d-5lhgr|1m|10Mi|
+|frontend-55b84b596d-dhqpt|1m|10Mi|
+|load-generator|175m|1Mi|
+|webapp-deployment-56df784bd8-72rtn|0m|7Mi|
+|webapp-deployment-56df784bd8-78wtk|0m|8Mi|
+|webapp-deployment-56df784bd8-9kt4l|0m|8Mi|
+|webapp-deployment-56df784bd8-kp2c2|0m|7Mi|
+|webapp-deployment-56df784bd8-ms8qv|0m|7Mi|
 
 
 4. Probar Ingress
@@ -65,8 +66,10 @@ kubectl get all
 
 kubectl get ingress
 
-NAME          CLASS   HOSTS   ADDRESS        PORTS   AGE
-app-ingress   nginx   *       192.168.49.2   80      38m
+|NAME|CLASS|HOSTS|ADDRESS|PORTS|AGE|
+|----------|--------|----------|--------|--------|--------|
+|app-ingress|nginx|*|192.168.49.2|80|38m|
+
 
 kubectl get hpa
 
@@ -76,20 +79,21 @@ backend-hpa   Deployment/backend   cpu: <unknown>/50%   2    5      5        35m
 
 kubectl top pods
 
-NAME                                 CPU(cores)   MEMORY(bytes)
-backend-747789956d-66hh4             5m           7Mi
-backend-747789956d-ftj9t             6m           7Mi
-backend-747789956d-pscnb             5m           7Mi
-backend-747789956d-pzb8b             5m           7Mi
-backend-747789956d-qbcw6             6m           7Mi
-frontend-55b84b596d-5lhgr            1m           10Mi
-frontend-55b84b596d-dhqpt            1m           10Mi
-load-generator                       175m         1Mi
-webapp-deployment-56df784bd8-72rtn   0m           7Mi
-webapp-deployment-56df784bd8-78wtk   0m           8Mi
-webapp-deployment-56df784bd8-9kt4l   0m           8Mi
-webapp-deployment-56df784bd8-kp2c2   0m           7Mi
-webapp-deployment-56df784bd8-ms8qv   0m           7Mi
+|NAME|CPU(cores)|MEMORY(bytes)|
+|----------|--------|----------|
+|backend-747789956d-66hh4|6m|7Mi|
+|backend-747789956d-ftj9t|6m|7Mi|
+|backend-747789956d-pscnb|6m|7Mi|
+|backend-747789956d-pzb8b|5m|7Mi|
+|backend-747789956d-qbcw6|5m|7Mi|
+|frontend-55b84b596d-5lhgr|1m|10Mi|
+|frontend-55b84b596d-dhqpt|1m|10Mi|
+|load-generator|175m|1Mi|
+|webapp-deployment-56df784bd8-72rtn|0m|7Mi|
+|webapp-deployment-56df784bd8-78wtk|0m|8Mi|
+|webapp-deployment-56df784bd8-9kt4l|0m|8Mi|
+|webapp-deployment-56df784bd8-kp2c2|0m|7Mi|
+|webapp-deployment-56df784bd8-ms8qv|0m|7Mi|
 
 **d) Capturas de pantalla:**
 1. ![Ingress funcionando](./screenshots/01-ingress-test.png)
