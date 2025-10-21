@@ -47,20 +47,21 @@ http://192.168.49.2:8080/
 
 kubectl get all
 
-NAME                                     READY   STATUS    RESTARTS      AGE
-pod/backend-747789956d-66hh4             1/1     Running   0             13m
-pod/backend-747789956d-ftj9t             1/1     Running   0             13m
-pod/backend-747789956d-pscnb             1/1     Running   0             38m
-pod/backend-747789956d-pzb8b             1/1     Running   0             38m
-pod/backend-747789956d-qbcw6             1/1     Running   0             13m
-pod/frontend-55b84b596d-5lhgr            1/1     Running   0             39m
-pod/frontend-55b84b596d-dhqpt            1/1     Running   0             39m
-pod/load-generator                       1/1     Running   0             59m
-pod/webapp-deployment-56df784bd8-72rtn   1/1     Running   1 (81m ago)   4d
-pod/webapp-deployment-56df784bd8-78wtk   1/1     Running   1 (81m ago)   4d
-pod/webapp-deployment-56df784bd8-9kt4l   1/1     Running   1 (81m ago)   4d
-pod/webapp-deployment-56df784bd8-kp2c2   1/1     Running   1 (81m ago)   4d
-pod/webapp-deployment-56df784bd8-ms8qv   1/1     Running   1 (81m ago)   4d
+|NAME|READY|STATUS|RESTARTS|AGE|
+|----------|--------|----------|--------|--------|
+|pod/backend-747789956d-66hh4 |1/1|Running|0|13m|
+|pod/backend-747789956d-ftj9t |1/1|Running|0|13m|
+|pod/backend-747789956d-pscnb |1/1|Running|0|38m|
+|pod/backend-747789956d-pzb8b |1/1|Running|0|38m|
+|pod/backend-747789956d-qbcw6 |1/1|Running|0|13m|
+|pod/frontend-55b84b596d-5lhgr|1/1|Running|0|39m|
+|pod/frontend-55b84b596d-dhqpt|1/1|Running|0|39m|
+|pod/load-generator|1/1|Running|0||59m|
+|pod/webapp-deployment-56df784bd8-72rtn|1/1|Running|1|(81m ago)|4d|
+|pod/webapp-deployment-56df784bd8-78wtk|1/1|Running|1|(81m ago)|4d|
+|pod/webapp-deployment-56df784bd8-9kt4l|1/1|Running|1|(81m ago)|4d|
+|pod/webapp-deployment-56df784bd8-kp2c2|1/1|Running|1|(81m ago)|4d|
+|pod/webapp-deployment-56df784bd8-ms8qv|1/1|Running|1|(81m ago)|4d|
 
 kubectl get ingress
 
